@@ -12,6 +12,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
 }
@@ -55,7 +64,7 @@ header img {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1em;
 }
 
@@ -67,7 +76,7 @@ header img {
 }
 
 .card h1 {
-  font-size: 25px;
+  font-size: 18px;
   border-bottom: 1px;
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -81,5 +90,4 @@ header img {
 
 .card-inner {
   position: relative;
-  
 }

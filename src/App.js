@@ -15,15 +15,14 @@ const App = () => {
     const fetchItems = async () => {
       const result = await axios(
         `https://api.nasa.gov/planetary/apod?api_key=aeMjlr62KYkmJOc3xvbe2lcdr3rFLA0KZ0yXX0oB`
-      )
+      );
+      console.log(result.data);
 
       setItems(result.data);
       setIsLoading(false);
     };
-
     fetchItems();
   }, []);
-
 
   return (
     <div className="container">

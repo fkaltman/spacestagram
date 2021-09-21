@@ -13,7 +13,7 @@ const SpacePic = ({ item }) => {
       <h2 className="title">{item.title}</h2>
       {/* <h4 className="blurb">{item.explanation}</h4> */}
       {/* <button id="love" onClick={clickLove(love)}> &#10084;</button> */}
-      <button id="love"> &#10084;</button>
+      <button id="love" className="like-button"> &#10084;</button>
       </div>
     </div>
   );

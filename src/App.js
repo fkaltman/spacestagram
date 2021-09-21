@@ -5,16 +5,16 @@ import SpacepicGrid from "./components/spacepics/SpacepicGrid";
 import axios from "axios";
 
 const App = () => {
-  // piece of state
+  // below are pieces of state
   const [items, setItems] = useState([]);
-  // piece of state
   const [isLoading, setIsLoading] = useState(true);
+  const [query, setQuery] = useState('');
 
   // useEffect hook, don't but async on that function, make a new function inside
   useEffect(() => {
     const fetchItems = async () => {
       const result = await axios(
-        `https://api.nasa.gov/planetary/apod?api_key=aeMjlr62KYkmJOc3xvbe2lcdr3rFLA0KZ0yXX0oB`
+        `https://api.nasa.gov/planetary/apod?api_key=aeMjlr62KYkmJOc3xvbe2lcdr3rFLA0KZ0yXX0oB&start_date=2000-01-01&end_date=2000-01-31`
       );
       console.log(result.data);
 

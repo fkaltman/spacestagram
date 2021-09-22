@@ -6,12 +6,12 @@ import React from "react";
 
 const SpacePic = ({ item }) => {
   return (
+
     <div className="card">
       <img src={item.url} alt="Astronomy pic of the day from the NASA Api" />
       <div className="card-text">
         <h4>{item.date}</h4>
         <h2 className="title">{item.title}</h2>
-        {/* <h4 className="blurb">{item.explanation}</h4> */}
         <button
           id="love"
           className="like-button"

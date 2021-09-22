@@ -8,7 +8,7 @@ const App = () => {
   // below are pieces of state
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
 
   // useEffect hook, don't but async on that function, make a new function inside
   useEffect(() => {
@@ -16,8 +16,6 @@ const App = () => {
       const result = await axios(
         `https://api.nasa.gov/planetary/apod?api_key=aeMjlr62KYkmJOc3xvbe2lcdr3rFLA0KZ0yXX0oB&start_date=2000-01-01&end_date=2000-01-31`
       );
-      console.log(result.data);
-
       setItems(result.data);
       setIsLoading(false);
     };

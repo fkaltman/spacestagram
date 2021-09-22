@@ -3,7 +3,7 @@ import SpacePic from "./SpacePic";
 
 const SpacepicGrid = ({ items, isLoading }) => {
   return isLoading ? (
-    <h1>Loading...</h1>
+    <h3 className="loading">Loading...</h3>
   ) : (
     <section className="cards">
       {items.map((item) => (

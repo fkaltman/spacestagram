@@ -3,8 +3,9 @@ import logo from "../../src/img/spaceship_name.png";
 
 const Header = () => {
   return (
-    <header className='ship'>
-      <img src={logo} alt="A cute little spaceship cartoon made with the word spacestagram" />
+    <header>
+      <img className='ship' src={logo} alt="A cute little spaceship cartoon made with the word spacestagram" />
+      <h1>Choose your favorite images from January 2020</h1>
     </header> 
   );
 };

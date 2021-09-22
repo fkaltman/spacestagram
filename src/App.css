@@ -7,9 +7,15 @@
 html,
 body {
   /* background: #333; */
-  background: #fff;
+  background: radial-gradient(
+    circle at 100%,
+    #333,
+    #333 50%,
+    #eee 75%,
+    #333 75%
+  );
   height: 100vh;
-  color: #333;
+  color: rgb(94, 92, 92);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -27,19 +33,9 @@ a {
 }
 
 .container {
-  max-width: 1100px;
+  /* max-width: 1100px; */
   margin: auto;
   padding: 0 20px;
-}
-
-.btn {
-  display: inline-block;
-  color: #fff;
-  font-size: 1em;
-  text-align: center;
-  padding: 10px 15px;
-  border: 0;
-  margin: 10px 0;
 }
 
 header {
@@ -67,20 +63,19 @@ header img {
   height: 100px;
 }
 
-/* missing css */
-
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2em;
+  width: 350px;
+  /* height: 300px; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4em;
 }
 
 .card {
-  width: 450px;
-  perspective: 1000px;
+  width: 350px;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.1), 0 1.5px 6px rgba(0, 0, 0, 0.1);
-  /* background-color: rgba(182, 127, 121, 0.452); */
-  background-color: rgba(10, 99, 87, 0.219);
+  background-color: rgba(134, 196, 187, 0.95);
+  border-radius: 4px;
 }
 
 .card h1 {
@@ -91,15 +86,16 @@ header img {
 }
 
 .card img {
-  width: 450px;
-  height: 400px;
+  width: 350px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 4px;
 }
 
 .card-text {
+  height: 80px;
   margin: 20px;
   position: relative;
+  color: #000;
 }
 
 .title {
@@ -113,10 +109,11 @@ header img {
 }
 
 .like-button {
-  color: rgb(173, 169, 169) !important;
+  color: rgb(155, 152, 152) !important;
+  text-shadow: 1px #333;
   position: absolute;
   right: 0px;
-  bottom: 0px;
+  top: 45px;
   background-color: transparent;
   border: 0px;
   margin-top: 6px;
@@ -126,6 +123,39 @@ header img {
   -webkit-transform: scale(1, 1.2);
 }
 
-.card-inner {
-  /* position: relative; */
+.like-button-pink {
+  color: rgba(238, 68, 136, 0.7) !important;
+  position: absolute;
+  right: 0px;
+  top: 45px;
+  margin-top: 6px;
+  font-size: 40px;
+  display: inline-block;
+  transform: scale(1, 1.2);
+  -webkit-transform: scale(1, 1.2);
+}
+
+@media (max-width: 800px) {
+
+  body {
+    background: rgb(95, 94, 94);
+  }
+  
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header {
+    height: 100px;
+  }
+  
+  header img {
+    width: 110px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }

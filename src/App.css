@@ -6,22 +6,13 @@
 
 html,
 body {
-  /* background: radial-gradient(
-    circle at 100%,
-    #333,
-    #333 50%,
-    #eee 115%,
-    #333 75%
-  ); */
-  
   background: radial-gradient(
-    circle at 100%,
+    circle at left center,
     #333,
-    #333 50%,
+    #333 60%,
     #edcf71 65%,
     #333 75%
   );
-
   height: 100vh;
   color: rgb(94, 92, 92);
   font-family: Arial, Helvetica, sans-serif;
@@ -41,10 +32,8 @@ h1 {
   font-size: 1.6em;
   font-weight: bolder;
   letter-spacing: 0.3em;
-  text-align: center;
-}
-
-.container {
+  text-align: left;
+  margin-left: 30px;
 }
 
 header {

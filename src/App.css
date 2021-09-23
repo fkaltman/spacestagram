@@ -6,13 +6,7 @@
 
 html,
 body {
-  background: radial-gradient(
-    circle at left center,
-    #333,
-    #333 60%,
-    #edcf71 65%,
-    #333 75%
-  );
+  background-color:#fff;
   height: 100vh;
   color: rgb(94, 92, 92);
   font-family: Arial, Helvetica, sans-serif;
@@ -29,11 +23,11 @@ body {
 h1 {
   font-family: "Oswald", sans-serif;
   color: rgba(238, 68, 136, 0.7);
-  font-size: 1.6em;
+  font-size: 2.4em;
   font-weight: bolder;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
   text-align: left;
-  margin-left: 30px;
+  margin-left: 60px;
 }
 
 header {
@@ -62,12 +56,13 @@ header img {
 
 .card {
   width: 350px;
-  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.1), 0 1.5px 6px rgba(0, 0, 0, 0.1);
   background-color: rgba(71, 94, 105, 0.938);
+  background-color: #fff;
   border-radius: 4px;
 }
 
 .card img {
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.7), 0 1.5px 6px rgba(0, 0, 0, 0.7);
   width: 350px;
   height: 300px;
   object-fit: cover;
@@ -84,7 +79,7 @@ header img {
   height: 80px;
   margin: 20px;
   position: relative;
-  color: #fff;
+  color: #333;
 }
 
 .title {
@@ -98,7 +93,7 @@ header img {
   text-shadow: 1px #333;
   position: absolute;
   right: 0px;
-  top: 45px;
+  bottom: 45px;
   background-color: transparent;
   border: 0px;
   margin-top: 6px;

@@ -116,24 +116,22 @@ header img {
 }
 
 @media (max-width: 800px) {
-  body {
-    background-color: rgb(63, 63, 63) !important;
-  }
 
+  header {
+    height: 100px;
+  }
+  
+  header img {
+    margin-top: 10px;
+    width: 110px;
+  }
   h1 {
-    font-size: 0.9em;
+    font-size: 1.2em;
+    margin-left: 10px;
   }
 
   .cards {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  header {
-    height: 140px;
-  }
-
-  header img {
-    width: 170px;
   }
 }
 

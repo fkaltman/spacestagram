@@ -18,7 +18,7 @@ const SpacePic = ({ item }) => {
           onClick={(e) => e.target.classList.toggle
             ('like-button-pink')}
         >
-          {" "}
+          {""}
           &#10084;
         </button>
       </div>

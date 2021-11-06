@@ -20,7 +20,7 @@ const SpacePic = ({ item }) => {
           onClick={(e) => e.target.classList.toggle("like-button-pink")}
         >
           {""}
-          <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
           {/* <FaHotdog /> */}
         </button>
       </div>

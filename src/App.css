@@ -6,7 +6,7 @@
 
 html,
 body {
-  background-color:#fff;
+  background-color: #fff;
   height: 100vh;
   color: rgb(94, 92, 92);
   font-family: Arial, Helvetica, sans-serif;
@@ -90,7 +90,6 @@ header img {
 
 .like-button {
   color: rgba(114, 151, 168, 0.753) !important;
-  text-shadow: 1px #333;
   position: absolute;
   right: 0px;
   bottom: 45px;
@@ -107,7 +106,7 @@ header img {
   color: rgba(238, 68, 136, 0.7) !important;
   position: absolute;
   right: 0px;
-  bottom: 45px;
+  bottom: 4px;
   margin-top: 6px;
   font-size: 40px;
   display: inline-block;
@@ -116,11 +115,10 @@ header img {
 }
 
 @media (max-width: 800px) {
-
   header {
     height: 100px;
   }
-  
+
   header img {
     margin-top: 10px;
     width: 110px;

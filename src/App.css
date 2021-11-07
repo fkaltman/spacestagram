@@ -104,14 +104,14 @@ header img {
 
 .like-button-pink {
   color: rgba(238, 68, 136, 0.7) !important;
-  position: absolute;
+  /* position: absolute;
   right: 0px;
   bottom: 45px;
   margin-top: 6px;
   font-size: 40px;
   display: inline-block;
   transform: scale(1, 1.2);
-  -webkit-transform: scale(1, 1.2);
+  -webkit-transform: scale(1, 1.2); */
 }
 
 @media (max-width: 800px) {

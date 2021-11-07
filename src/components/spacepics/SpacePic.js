@@ -1,7 +1,7 @@
 import React from "react";
 // import { FaHotdog } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faLemon, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 // function clickLove() {
 //   document.getElementById(id).style.color = "#000";
@@ -20,7 +20,7 @@ const SpacePic = ({ item }) => {
           onClick={(e) => e.target.classList.toggle("like-button-pink")}
         >
           {""}
-          <FontAwesomeIcon icon={faCoffee}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
           {/* <FaHotdog /> */}
         </button>
       </div>
